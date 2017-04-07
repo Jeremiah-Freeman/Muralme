@@ -8,6 +8,7 @@ import { CreateNewComponent } from './create-new/create-new.component';
 import { EditComponent } from './edit/edit.component';
 import { ArtistDetailComponent } from './artist-detail/artist-detail.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { NavbarComponent } from './navbar/navbar.component';
     CreateNewComponent,
     EditComponent,
     ArtistDetailComponent,
-    NavbarComponent
+    NavbarComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
