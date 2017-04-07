@@ -9,6 +9,7 @@ import { EditComponent } from './edit/edit.component';
 import { ArtistDetailComponent } from './artist-detail/artist-detail.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { HomeComponent } from './home/home.component';
     EditComponent,
     ArtistDetailComponent,
     NavbarComponent,
-    HomeComponent
+    HomeComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
