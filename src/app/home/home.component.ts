@@ -10,6 +10,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./home.component.css'],
   providers: [MuralmeService]
 })
+
 export class HomeComponent implements OnInit {
   artists: FirebaseListObservable<any[]>;
 
