@@ -10,20 +10,20 @@ import { MuralmeService } from '../muralme.service';
   selector: 'app-artist-detail',
   templateUrl: './artist-detail.component.html',
   styleUrls: ['./artist-detail.component.css'],
-  providers: [MuralmeServices]
+  providers: [MuralmeService]
 })
 export class ArtistDetailComponent implements OnInit {
   artistId: string = null;
-  artistToDisplay: Artist;
+  artistToDisplay: Muralme;
 
-  constructor(private muralmeService: MuralmeServices, private route: ActivatedRoute, private location: Location) { }
+  constructor(private muralmeService: MuralmeService, private route: ActivatedRoute, private location: Location) { }
 
   ngOnInit() {
     this.route.params.forEach((urlParameters) => {
       this.artistId = urlParameters['id'];
     });
     this.artistService.getArtistById(this.artistId).subscribe(dataLastEmittedObserver => {
-      this.artistToDisplay = new Artist(
+      this.artistToDisplay = new Muralme(
         dataLastEmittedObserver.name,
         dataLastEmittedObserver.bio,
         dataLastEmittedObserver.style,

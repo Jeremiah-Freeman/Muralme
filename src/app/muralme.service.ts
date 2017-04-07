@@ -14,7 +14,7 @@ export class MuralmeService {
     return this.artists;
     }
 
-    getArtistById(artistKey: string) {
+    getArtistsById(artistKey: string) {
       return this.angularFire.database.object('/artists/' + artistKey);
     }
 

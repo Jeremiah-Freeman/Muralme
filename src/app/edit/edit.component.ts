@@ -17,7 +17,7 @@ export class EditComponent implements OnInit {
     }
 
     updateArtist(artistToUpdate){
-      this.artistService.updateArtist(artistToUpdate);
+      this.muralmeService.updateArtist(artistToUpdate);
       this.editFormShown = false;
     }
 

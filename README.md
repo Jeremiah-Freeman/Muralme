@@ -7,7 +7,7 @@
   1. user visists website and see images of murals painted around the world.
   2. user can click the images to visit a profile page of that artist.
   3. user can choose to filter the artists based on the price for the mural.
-  4. admin can add new artists to the website after a screening process has been completed.
+  4. admin can add new Muralmes to the website after a screening process has been completed.
   5. admin can edit each post's contents.
   6. admin can delete any post he/she chooses.
 
