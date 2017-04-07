@@ -6,7 +6,7 @@
     "Jay Freeman <jaythinkshappiness@gmail.com>"
   ],
   "license": "MIT",
-  "homepage": "",
+  "homepage": "https://github.com/jaythinkshappiness/Muralme",
   "ignore": [
     "**/.*",
     "node_modules",
