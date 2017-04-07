@@ -12,20 +12,20 @@ export class MuralmeService {
 
     getArtists(){
     return this.artists;
-    }
+  };
 
     getArtistById(artistKey: string) {
       return this.angularFire.database.object('/artists/' + artistKey);
-    }
+    };
 
     saveArtist(newArtist: Artist) {
       this.artists.push(newArtist);
-    }
+    };
 
     deleteArtist(localArtistToDelete){
       var artistEntryInFirebase = this.getArtistById(localArtistToDelete.$key);
       artistEntryInFirebase.remove();
-    }
+    };
 
     updateArtist(thisArtist: any) {
       var artistEntryInFirebase = this.getArtistById(thisArtist.$key);
@@ -36,6 +36,6 @@ export class MuralmeService {
                                   imageurl: thisArtist.imageurl,
                                   paint: thisArtist.paint});
 
-    }
+    };
   }
 }
