@@ -1,0 +1,28 @@
+<h3>Add a Artist:</h3>
+<div class="mdl-textfield mdl-js-textfield">
+  <input #name [(ngModel)]="selectedArtist.name" class="mdl-textfield__input" type="text" >
+  <label class="mdl-textfield__label" for="sample1">artist name</label>
+</div>
+<div  class="mdl-textfield mdl-js-textfield">
+  <input #bio [(ngModel)]="selectedArtist.bio" class="mdl-textfield__input" type="text" >
+  <label class="mdl-textfield__label" for="sample1">bio</label>
+</div>
+<div class="mdl-textfield mdl-js-textfield">
+  <input #style [(ngModel)]="selectedArtist.style" class="mdl-textfield__input" type="text" >
+  <label class="mdl-textfield__label" for="sample1">Style</label>
+</div>
+<div #paint class="mdl-textfield mdl-js-textfield">
+  <input [(ngModel)]="selectedArtist.paint" class="mdl-textfield__input" type="text" >
+  <label  class="mdl-textfield__label" for="sample1">paints used</label>
+</div>
+<div class="mdl-textfield mdl-js-textfield">
+  <input #imageurl [(ngModel)]="selectedArtist.imageurl" class="mdl-textfield__input" type="text" >
+  <label class="mdl-textfield__label" for="sample1">url to image</label>
+</div>
+<div class="mdl-textfield mdl-js-textfield">
+  <input #price [(ngModel)]="selectedArtist.price" class="mdl-textfield__input" type="number" >
+  <label class="mdl-textfield__label" for="sample1">starting price</label>
+</div>
+<button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored" (click)="addProject(name.value, bio.value, style.value, paint.value, imageurl.value, price.value)">
+  <i class="material-icons">add</i>
+</button>
