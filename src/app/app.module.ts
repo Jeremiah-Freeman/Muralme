@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { CreateNewComponent } from './create-new/create-new.component';
 import { EditComponent } from './edit/edit.component';
 import { ArtistDetailComponent } from './artist-detail/artist-detail.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CreateNewComponent,
     EditComponent,
-    ArtistDetailComponent
+    ArtistDetailComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
