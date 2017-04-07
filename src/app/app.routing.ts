@@ -1,3 +1,5 @@
+import { ModuleWithProviders }  from '@angular/core';
+import { Routes, RouterModule } from '@angular/router';
 import { CreateNewComponent } from './create-new/create-new.component';
 import { EditComponent } from './edit/edit.component';
 import { ArtistDetailComponent } from './artist-detail/artist-detail.component';
