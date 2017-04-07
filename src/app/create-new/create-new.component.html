@@ -29,4 +29,8 @@
 <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored" (click)="addArtist(name.value, bio.value, style.value, paint.value, price.value, imageurl.value)">
   <i class="material-icons">close</i>
 </button>
+
+<div class="artist-header">
+  <h2>{{artistToDisplay?.name}}</h2>
+  <p>By {{artistToDisplay?.bio}} &nbsp;<img src="{{artistToDisplay?.imageurl}}" class="creator-pics"> {{artistToDisplay?.style}}</p>
 </div>

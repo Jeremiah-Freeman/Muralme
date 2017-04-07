@@ -9,26 +9,26 @@ export class MuralmeService {
 
   constructor(private angularFire: AngularFire) {
     this.artists = angularFire.database.list('artists');
-
+  }
     getArtists(){
     return this.artists;
     }
-
-    getArtistsById(artistKey: string) {
+    //
+    getArtistById(artistKey: string) {
       return this.angularFire.database.object('/artists/' + artistKey);
     }
-
-    saveArtist(newArtist: Artist) {
-      this.artists.push(newArtist);
+    //
+    saveArtist(newMuralme: Muralme) {
+      this.artists.push(newMuralme);
     }
-
+    //
     deleteArtist(localArtistToDelete){
       var artistEntryInFirebase = this.getArtistById(localArtistToDelete.$key);
       artistEntryInFirebase.remove();
     }
 
-    updateArtist(thisArtist: any) {
-      var artistEntryInFirebase = this.getArtistsById(thisArtist.$key);
+    updateArtist(thisArtist) {
+      var artistEntryInFirebase = this.getArtistById(thisArtist.$key);
       artistEntryInFirebase.update({name: thisArtist.name,
                                   bio: thisArtist.bio,
                                   style: thisArtist.style,
@@ -37,5 +37,4 @@ export class MuralmeService {
                                   paint: thisArtist.paint});
 
     }
-  }
 }

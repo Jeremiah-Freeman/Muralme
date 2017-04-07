@@ -21,6 +21,6 @@ export class HomeComponent implements OnInit {
 
   goToDetailPage(clickedArtist) {
    this.router.navigate(['artist-detail', clickedArtist.$key]);
- };
+ }
 
 }

@@ -21,8 +21,9 @@ export class ArtistDetailComponent implements OnInit {
   ngOnInit() {
     this.route.params.forEach((urlParameters) => {
       this.artistId = urlParameters['id'];
-    });
-    this.artistService.getArtistById(this.artistId).subscribe(dataLastEmittedObserver => {
+  });
+
+    this.muralmeService.getArtistById(this.artistId).subscribe(dataLastEmittedObserver => {
       this.artistToDisplay = new Muralme(
         dataLastEmittedObserver.name,
         dataLastEmittedObserver.bio,
