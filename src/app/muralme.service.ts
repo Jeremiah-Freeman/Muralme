@@ -28,13 +28,13 @@ export class MuralmeService {
     }
 
     updateArtist(thisArtist: any) {
-      var artistEntryInFirebase = this.getArtistById(this.Artist.$key);
-      artistEntryInFirebase.update({name: this.Artist.name,
-                                  bio: this.Artist.bio,
-                                  style: this.Artist.style,
-                                  price: this.Artist.price,
-                                  imageurl: this.Artist.imageurl,
-                                  paint: this.Artist.paint});
+      var artistEntryInFirebase = this.getArtistsById(thisArtist.$key);
+      artistEntryInFirebase.update({name: thisArtist.name,
+                                  bio: thisArtist.bio,
+                                  style: thisArtist.style,
+                                  price: thisArtist.price,
+                                  imageurl: thisArtist.imageurl,
+                                  paint: thisArtist.paint});
 
     }
   }

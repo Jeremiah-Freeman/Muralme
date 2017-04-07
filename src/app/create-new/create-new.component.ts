@@ -14,7 +14,7 @@ export class CreateNewComponent implements OnInit {
     if (!name || !bio || !style || !paint || !price || !imageurl) {
       alert("Oops, please fill out all the fields");
     } else {
-      var newArtist: Artist = new Muralme(name, bio, style, paint, price, imageurl);
+      var newArtist: Muralme = new Muralme(name, bio, style, paint, price, imageurl);
       console.log(newArtist);
       this.muralmeService.saveArtist(newArtist);
     }
