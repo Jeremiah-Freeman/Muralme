@@ -14,6 +14,7 @@ import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
 import { ArtistPipe } from './artist.pipe';
+import { AdminComponent } from './admin/admin.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -32,7 +33,8 @@ export const firebaseConfig = {
     HomeComponent,
     ContactComponent,
     AboutComponent,
-    ArtistPipe
+    ArtistPipe,
+    AdminComponent
   ],
   imports: [
     BrowserModule,

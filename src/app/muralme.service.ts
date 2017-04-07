@@ -32,9 +32,9 @@ export class MuralmeService {
       artistEntryInFirebase.update({name: thisArtist.name,
                                   bio: thisArtist.bio,
                                   style: thisArtist.style,
-                                  price: thisArtist.price,
+                                  paint: thisArtist.paint,
                                   imageurl: thisArtist.imageurl,
-                                  paint: thisArtist.paint});
+                                  price: thisArtist.price});
 
     }
 }
