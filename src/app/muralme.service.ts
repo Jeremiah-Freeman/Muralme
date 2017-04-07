@@ -12,30 +12,30 @@ export class MuralmeService {
 
     getArtists(){
     return this.artists;
-  };
+    }
 
     getArtistById(artistKey: string) {
       return this.angularFire.database.object('/artists/' + artistKey);
-    };
+    }
 
     saveArtist(newArtist: Artist) {
       this.artists.push(newArtist);
-    };
+    }
 
     deleteArtist(localArtistToDelete){
       var artistEntryInFirebase = this.getArtistById(localArtistToDelete.$key);
       artistEntryInFirebase.remove();
-    };
+    }
 
     updateArtist(thisArtist: any) {
-      var artistEntryInFirebase = this.getArtistById(thisArtist.$key);
-      artistEntryInFirebase.update({name: thisArtist.name,
-                                  bio: thisArtist.bio,
-                                  style: thisArtist.style,
-                                  price: thisArtist.price,
-                                  imageurl: thisArtist.imageurl,
-                                  paint: thisArtist.paint});
+      var artistEntryInFirebase = this.getArtistById(this.Artist.$key);
+      artistEntryInFirebase.update({name: this.Artist.name,
+                                  bio: this.Artist.bio,
+                                  style: this.Artist.style,
+                                  price: this.Artist.price,
+                                  imageurl: this.Artist.imageurl,
+                                  paint: this.Artist.paint});
 
-    };
+    }
   }
 }
