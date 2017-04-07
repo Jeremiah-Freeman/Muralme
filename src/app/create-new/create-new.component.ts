@@ -9,6 +9,7 @@ import { Muralme } from '../muralme.model';
 })
 export class CreateNewComponent implements OnInit {
 
+
   constructor() { }
 
   ngOnInit() {
