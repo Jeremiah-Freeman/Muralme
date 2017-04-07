@@ -6,6 +6,8 @@ import { ArtistDetailComponent } from './artist-detail/artist-detail.component';
 import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
+import { AdminComponent } from './admin/admin.component';
+
 
 const appRoutes: Routes = [
 
@@ -32,6 +34,10 @@ const appRoutes: Routes = [
   {
     path: 'create',
     component: CreateNewComponent
+  },
+  {
+    path: 'admin',
+    component: AdminComponent
   }
 
 ];
