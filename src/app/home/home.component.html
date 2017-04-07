@@ -1,3 +1,11 @@
-<p>
-  home workadasdasda!
-</p>
+<main class="mdl-layout__content">
+  <div class="page-content">
+    <div class="content-grid mdl-grid">
+      <div *ngFor="let artist of artists | async" class="mdl-cell project-cells" (click)="goToDetailPage(artist)">
+        <div class="panel-body">
+          <h3>{{artist.name}} by {{artist.bio}}</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
