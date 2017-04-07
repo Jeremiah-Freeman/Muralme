@@ -1,0 +1,17 @@
+{
+  "name": "muralme",
+  "description": "mural managment app",
+  "main": "",
+  "authors": [
+    "Jay Freeman <jaythinkshappiness@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
