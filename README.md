@@ -55,6 +55,25 @@
 
     * link up pages to one another
 
+    * FireBase
+          - install firebase and angularfire ( npm install angularfire2 firebase  --save )
+          - add firebase to tsconfig.json
+          - make api-keys file in top of directive( add firebase object)
+          - git ignore it
+          - import firebase ( api / angularfire into module ) ( imports too! )
+          - add export firebase to module
+          - change rules to true in firebase website
+          - create artists.json file for firebase deployment
+          - import to service file
+          - add to injectables
+          - add to constructor ( build out constructor )
+          - create getArtist function
+          - add async to for loop and print out artist from database
+          - add saving ( creating new ) functionality
+          - add creating new functionality
+          - add editing functionality
+          - add deleting functionality
+
 
     UX/UI:
       - Add custom styling / form placement.
