@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Muralme } from './muralme.model';
 
 @Component({
   selector: 'app-root',
