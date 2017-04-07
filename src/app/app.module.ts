@@ -11,6 +11,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
+import { ArtistPipe } from './artist.pipe';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { AboutComponent } from './about/about.component';
     NavbarComponent,
     HomeComponent,
     ContactComponent,
-    AboutComponent
+    AboutComponent,
+    ArtistPipe
   ],
   imports: [
     BrowserModule,
