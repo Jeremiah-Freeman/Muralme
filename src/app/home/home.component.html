@@ -3,9 +3,21 @@
     <div class="content-grid mdl-grid">
       <div *ngFor="let artist of artists | async" class="mdl-cell project-cells" (click)="goToDetailPage(artist)">
         <div class="panel-body">
-          <h3>{{artist.name}}</h3> <img src="{{artist.imageurl}}" alt="images of {{artist.name}}'s art work" /> 
+          <h3>{{artist.name}}</h3> <img src="{{artist.imageurl}}" alt="images of {{artist.name}}'s art work" />
         </div>
       </div>
     </div>
   </div>
 </main>
+<div class="demo">
+  <!-- Standard Select -->
+  <div class="mdl-selectfield">
+    <label>Standard Select</label>
+    <select class="browser-default">
+      <option value="" disabled selected>Choose your option</option>
+      <option value="1">Option 1</option>
+      <option value="2">Option 2</option>
+      <option value="3">Option 3</option>
+    </select>
+  </div>
+</div>
