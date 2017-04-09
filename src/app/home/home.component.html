@@ -1,21 +1,20 @@
 <main class="mdl-layout__content">
   <div class="page-content">
     <div class="content-grid mdl-grid">
-      <div *ngFor="let artist of artists | async" class="mdl-cell project-cells" (click)="goToDetailPage(artist)">
+      <div *ngFor="let artist of artists | async | artist:filterByArtist" class="mdl-cell project-cells" (click)="goToDetailPage(artist)">
         <div class="panel-body">
           <h3>{{artist.name}}</h3> <img src="{{artist.imageurl}}" alt="images of {{artist.name}}'s art work" />
         </div>
       </div>
-      <div class="mdl-selectfield">
-        <select id="gender">
-          <option value=""></option>
-          <option value="male">Male</option>
-          <option value="female">Female</option>
-        </select>
-        <label class="mdl-selectfield__label" for="gender">User gender</label>
-      </div>
     </div>
+    <div class="mdl-selectfield">
+      <select id="pricing" (change)="onChange($event.target.value)">
+        <option value=""></option>
+        <option value="highCost">high</option>
+        <option value="lowCost">low</option>
+      </select>
+      <label class="mdl-selectfield__label" for="pricing">pricing</label>
+    </div>
+    <li><a class="mdl-navigation__link" routerLink="admin">Admin</a></li>
   </div>
 </main>
-<li><a class="mdl-navigation__link" routerLink="admin">Admin</a></li>
-<div class="demo">

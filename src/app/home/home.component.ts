@@ -24,4 +24,11 @@ export class HomeComponent implements OnInit {
    this.router.navigate(['artist-detail', clickedArtist.$key]);
  }
 
+ filterByArtist: string = "allPrices";
+
+ onChange(optionFromMenu) {
+   this.filterByArtist = optionFromMenu;
+ }
+
+
 }
