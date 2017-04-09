@@ -13,9 +13,9 @@ import { AngularFire, FirebaseListObservable } from 'angularfire2';
 export class CreateNewComponent implements OnInit {
 
   addArtist(name: string, bio: string, style: string, paint: string, price: number, imageurl: string) {
-      var newArtist: Muralme = new Muralme(name, bio, style, paint, price, imageurl);
-      console.log(newArtist);
-      this.muralmeService.saveArtist(newArtist);
+      var newMuralme: Muralme = new Muralme(name, bio, style, paint, price, imageurl);
+      console.log(newMuralme);
+      this.muralmeService.saveArtist(newMuralme);
     }
     constructor(private muralmeService: MuralmeService) { }
 
