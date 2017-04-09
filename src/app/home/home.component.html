@@ -6,18 +6,16 @@
           <h3>{{artist.name}}</h3> <img src="{{artist.imageurl}}" alt="images of {{artist.name}}'s art work" />
         </div>
       </div>
+      <div class="mdl-selectfield">
+        <select id="gender">
+          <option value=""></option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
+        <label class="mdl-selectfield__label" for="gender">User gender</label>
+      </div>
     </div>
   </div>
 </main>
+<li><a class="mdl-navigation__link" routerLink="admin">Admin</a></li>
 <div class="demo">
-  <!-- Standard Select -->
-  <div class="mdl-selectfield">
-    <label>Standard Select</label>
-    <select class="browser-default">
-      <option value="" disabled selected>Choose your option</option>
-      <option value="1">Option 1</option>
-      <option value="2">Option 2</option>
-      <option value="3">Option 3</option>
-    </select>
-  </div>
-</div>

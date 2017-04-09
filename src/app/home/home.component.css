@@ -3,7 +3,7 @@ img {
 }
 
 
-select {
+/*select {
   font-family: inherit;
   background-color: transparent;
   width: 100%;
@@ -15,22 +15,22 @@ select {
 }
 
 /* Remove focus */
-select:focus {
-  outline: none}
+/*select:focus {
+  outline: none}*/
 
 /* Hide label */
-.mdl-selectfield label {display: none;}
+/*.mdl-selectfield label {display: none;}*/
 /* Use custom arrow */
-.mdl-selectfield select {appearance: none}
-.mdl-selectfield {
-  font-family: 'Roboto','Helvetica','Arial',sans-serif;
+/*.mdl-selectfield select {appearance: none}*/
+/*.mdl-selectfield {*/
+  /*font-family: 'Roboto','Helvetica','Arial',sans-serif;
   position: relative;
     &:after {
         position: absolute;
         top: 0.75em;
         right: 0.5em;
         /* Styling the down arrow */
-        width: 0;
+        /*width: 0;
         height: 0;
         padding: 0;
         content: '';
@@ -39,15 +39,15 @@ select:focus {
         border-top: .375em solid $select-border-color;
         pointer-events: none;
     }
-}
+}*/
 
 /* ==========  Demo CSS ========== */
-body {
+/*body {
   padding: 20px;
   background: #fafafa;
-  font-family: 'Roboto','Helvetica','Arial',sans-serif;
-}
-.demo {
+  font-family: 'Roboto','Helvetica','Arial',sans-serif;*/
+/*}*/
+/*.demo {
   width: 200px;
   padding: 20px;
   margin: 0 auto;
@@ -55,5 +55,5 @@ body {
   margin-top: -2em;
   position: absolute;
   right: 0;
-  left: 0;
-}
+  left: 0;*/
+/*}*/
