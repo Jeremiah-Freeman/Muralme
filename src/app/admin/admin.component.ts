@@ -19,12 +19,12 @@ export class AdminComponent implements OnInit {
     this.artists = this.muralmeService.getArtists();
   }
 
-  beginDeletingProject(artistToDelete) {
+  beginDeletingArtist(artistToDelete) {
     if(confirm("Are you sure you want to delete this item from your collection?")){
       this.muralmeService.deleteArtist(artistToDelete);
     }
   }
 
-    constructor(private muralmeService: MuralmeService, private router: Router) { }
+  constructor(private muralmeService: MuralmeService, private router: Router) { }
 
 }

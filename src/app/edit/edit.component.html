@@ -1,36 +1,35 @@
 <div>
-  <button (click)="showEditForm()">Edit</button>
+  <button (click)="showEditForm()" class="mdl-button mdl-js-button mdl-button--fab mdl-button--mini-fab" >
+  <i class="material-icons">edit</i>
+</button>
 </div>
 <div *ngIf="editFormShown">
   <h3>Edit a Artist:</h3>
   <div class="mdl-textfield mdl-js-textfield">
     <input [(ngModel)]="selectedArtist.name" class="mdl-textfield__input" type="text" >
-    <label class="mdl-textfield__label" for="sample1">artist name</label>
+    <label class="mdl-textfield__label" for="sample1"></label>
   </div>
   <div  class="mdl-textfield mdl-js-textfield">
     <input [(ngModel)]="selectedArtist.bio" class="mdl-textfield__input" type="text" >
-    <label class="mdl-textfield__label" for="sample1">bio</label>
+    <label class="mdl-textfield__label" for="sample1"></label>
   </div>
   <div class="mdl-textfield mdl-js-textfield">
     <input [(ngModel)]="selectedArtist.style" class="mdl-textfield__input" type="text" >
-    <label class="mdl-textfield__label" for="sample1">Style</label>
+    <label class="mdl-textfield__label" for="sample1"></label>
   </div>
   <div class="mdl-textfield mdl-js-textfield">
     <input [(ngModel)]="selectedArtist.paint" class="mdl-textfield__input" type="text" >
-    <label class="mdl-textfield__label" for="sample1">paints used</label>
+    <label class="mdl-textfield__label" for="sample1"></label>
   </div>
   <div class="mdl-textfield mdl-js-textfield">
     <input [(ngModel)]="selectedArtist.imageurl" class="mdl-textfield__input" type="text" >
-    <label class="mdl-textfield__label" for="sample1">url to image</label>
+    <label class="mdl-textfield__label" for="sample1"></label>
   </div>
   <div class="mdl-textfield mdl-js-textfield">
     <input [(ngModel)]="selectedArtist.price" class="mdl-textfield__input" type="number" >
-    <label class="mdl-textfield__label" for="sample1">starting price</label>
+    <label class="mdl-textfield__label" for="sample1"></label>
   </div>
-  <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored" (click)="updateArtist(selectedArtist)">
-  <i class="material-icons">edit</i>
-</button>
-<button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored" (click)="cancelEdit()">
-<i class="material-icons">cancel</i>
+<button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored" (click)="updateArtist(selectedArtist)">
+<i class="material-icons">check</i>
 </button>
 </div>

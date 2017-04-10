@@ -9,6 +9,7 @@
           <h4>{{artist.style}}</h4>
           <h4>{{artist.paint}}</h4>
           <app-edit [selectedArtist]="artist"></app-edit>
+          <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect "  (click)="beginDeletingArtist(artist)"><i class="material-icons">delete_forever</i></button>
         </div>
       </div>
     </div>

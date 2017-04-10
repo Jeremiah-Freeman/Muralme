@@ -1,59 +1,19 @@
 img {
   max-width: 100%;
+  max-height: 30%;
 }
 
-
-/*select {
-  font-family: inherit;
-  background-color: transparent;
-  width: 100%;
-  padding: $select-padding 0;
-  font-size: $select-font-size;
-  color: $select-color;
-  border: none;
-  border-bottom: 1px solid $select-border-color;
+.demo-card-wide.mdl-card {
+  max-width: 100%;
 }
+.demo-card-wide > .mdl-card__title {
+  color: #fff;
+  max-height: 600px;
 
-/* Remove focus */
-/*select:focus {
-  outline: none}*/
-
-/* Hide label */
-/*.mdl-selectfield label {display: none;}*/
-/* Use custom arrow */
-/*.mdl-selectfield select {appearance: none}*/
-/*.mdl-selectfield {*/
-  /*font-family: 'Roboto','Helvetica','Arial',sans-serif;
-  position: relative;
-    &:after {
-        position: absolute;
-        top: 0.75em;
-        right: 0.5em;
-        /* Styling the down arrow */
-        /*width: 0;
-        height: 0;
-        padding: 0;
-        content: '';
-        border-left: .25em solid transparent;
-        border-right: .25em solid transparent;
-        border-top: .375em solid $select-border-color;
-        pointer-events: none;
-    }
-}*/
-
-/* ==========  Demo CSS ========== */
-/*body {
-  padding: 20px;
-  background: #fafafa;
-  font-family: 'Roboto','Helvetica','Arial',sans-serif;*/
-/*}*/
-/*.demo {
-  width: 200px;
-  padding: 20px;
-  margin: 0 auto;
-  top: 50%;
-  margin-top: -2em;
-  position: absolute;
-  right: 0;
-  left: 0;*/
-/*}*/
+}
+.demo-card-wide > .mdl-card__menu {
+  color: #fff;
+}
+.body {
+  margin-left: 6%;
+}
