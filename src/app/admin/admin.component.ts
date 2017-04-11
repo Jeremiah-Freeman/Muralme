@@ -24,6 +24,7 @@ export class AdminComponent implements OnInit {
       this.muralmeService.deleteArtist(artistToDelete);
     }
   }
+  
 
   constructor(private muralmeService: MuralmeService, private router: Router) { }
 

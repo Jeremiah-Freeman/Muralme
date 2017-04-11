@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Muralme } from '../muralme.model';
 import { MuralmeService } from '../muralme.service';
 import { AngularFire, FirebaseListObservable } from 'angularfire2';
+import { Router } from '@angular/router';
 
 
 @Component({

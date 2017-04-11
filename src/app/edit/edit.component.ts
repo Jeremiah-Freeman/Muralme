@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { MuralmeService } from '../muralme.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-edit',
