@@ -1,3 +1,50 @@
 img {
   max-width: 100%;
+  max-height: 30%;
+}
+
+.demo-card-wide.mdl-card {
+  max-width: 100%;
+}
+.demo-card-wide > .mdl-card__title {
+  color: green;
+  max-height: 100px;
+
+}
+.demo-card-wide > .mdl-card__menu {
+  color: green;
+}
+.body {
+  margin-left: 6%;
+}
+
+#select {
+text-align: center;
+margin-bottom: 7px;}
+
+.mdl-card__actions {
+	display: flex;
+	box-sizing:border-box;
+	align-items: center;
+}
+
+.mdl-card__actions > .mdl-button--icon {
+	margin-right: 3px;
+	margin-left: 3px;
+}
+
+.demo-card-wide.mdl-card {
+  width: 512px;
+
+}
+.demo-card-wide > .mdl-card__title {
+  color: green;
+  height: 176px;
+}
+.demo-card-wide > .mdl-card__menu {
+  color: green;
+}
+
+img {
+  width: 512px;
 }

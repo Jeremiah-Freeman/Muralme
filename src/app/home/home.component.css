@@ -8,7 +8,7 @@ img {
 }
 .demo-card-wide > .mdl-card__title {
   color: #fff;
-  max-height: 600px;
+  max-height: 100px;
 
 }
 .demo-card-wide > .mdl-card__menu {
@@ -31,4 +31,20 @@ margin-bottom: 7px;}
 .mdl-card__actions > .mdl-button--icon {
 	margin-right: 3px;
 	margin-left: 3px;
+}
+
+.demo-card-wide.mdl-card {
+  width: 512px;
+
+}
+.demo-card-wide > .mdl-card__title {
+  color: #fff;
+  height: 176px;
+}
+.demo-card-wide > .mdl-card__menu {
+  color: #fff;
+}
+
+img {
+  width: 512px;
 }
